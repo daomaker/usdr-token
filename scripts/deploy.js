@@ -1,6 +1,6 @@
 async function main() {
   const USDR = await ethers.getContractFactory("USDR");
-  const usdr = await USDR.deploy(ethers.utils.parseUnits("4886245.347309997", 18));
+  const usdr = await USDR.deploy();
   await usdr.deployed();
 
   console.log("USDR address:", usdr.address);
